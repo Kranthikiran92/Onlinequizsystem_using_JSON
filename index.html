@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            header{
+                text-align: left;
+                margin-left: 50px;
+                margin-top: 30px;
+               padding-bottom: 35px;
+                color: #22092C;
+                font-family: fantasy;
+                font-size: xx-large;
+                background-attachment: fixed;
+            }
+            body{
+                background-color: #fff;
+
+            }
+            #form{
+                background-color: #22092C;
+                color: #fff;
+                 text-align: center;
+                 margin-top: 10px;
+                 padding: 120px;
+                 padding-left: 30px;
+                 font-size: larger;
+            }
+            #startQuizButton {
+                background-color: #fff;
+                color: #22092C;
+                font-size: 18px;
+                padding: 15px 30px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            #startQuizButton:hover {
+                background-color: #D0A2F7;
+            }
+            #abouttest{
+    color:#22092C;
+    font-size: x-large;
+    margin-top:30px;
+    margin-left: 30px;
+    margin-right: 50px;
+    padding-top: 80px;
+  }
+  #para{
+    text-align: justify;
+    color: #22092C;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    justify-content: center;
+    margin-left: 30px;
+  }
+        </style>
+    
+    </head>
+    
+    <body>
+        <header>
+            QUIZZ
+            <span style="float: right;font-size: medium;"><a  id="abouttest"  href="abouttest.html">ABOUT-QUIZZ</a></span> </h1></header>
+        <div id="form">
+            <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Online Quizz <span style="color: #FFA33C;">System </span></h1>
+            <p>Test your knowledge with our exciting quizzes!
+            On the HTML,JAVA,DBMS courses.</p>
+            <br>
+            <br>
+        <button id="startQuizButton" onclick="startQuiz()">Start Quiz</button>
+        </div>
+        <br>
+        <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+          <u>  List of Courses:</u>
+        </h2><br><br>
+        <div id="para">
+        <div ><span style="float: left;"><h2>HTML:</h2></span><span style="float: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxDzCwVfZ3T63w_nkCdWm7jlz1fJe4ybMBZdne3Lj7TqAExMFPkpTei3-VNXH3y_6SR3U&usqp=CAU"></span></div>
+        <P>HTML (Hypertext Markup Language) uses tags to structure content: h1 tag for headings, p for paragraphs, and li,lo for lists. Links are created with a tag, and images with img src="" alt="">. HTML5 introduces multimedia features. A document 
+            includes html, head, and body tags; metadata is placed in the head, and content in the body. Basic attributes like "src" and "alt" enhance elements.DOCTYPE html> declares the HTML version. HTML provides a foundation for web development, defining the structure and layout of web pages.for<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"> in-detail</a></P>
+        <br>
+        <br>
+        <br>
+        <div><span style="float: left;"><h2>JAVA:</h2></span><span style="float: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNtyOQzedKMAeKPZzwS_CcVAtO4r-gyEm-OGnPAUO3-tUbq3eI3lFws5PzoinbhGjoJU&usqp=CAU"></span></div>
+        <p>Java is a high-level, versatile, and object-oriented programming language developed by Sun Microsystems (now owned by Oracle) in the mid-1990s. Here's a brief overview in 7 lines:
+            Object-Oriented: Java follows the object-oriented programming paradigm, emphasizing the use of classes and objects.
+            Platform-Independent: Java applications can run on any device with the Java Virtual Machine (JVM), ensuring platform independence.
+            Write Once, Run Anywhere (WORA): Java's design allows developers to write code that can run on multiple platforms without modification.
+            Syntax Similar to C++: Java's syntax is similar to C++, making it accessible to programmers with experience in C-based languages.
+            Automatic Memory Management: Java incorporates automatic garbage collection, simplifying memory management for developers.
+            Rich Standard Library: Java provides a comprehensive standard library, offering pre-built modules and functions for various tasks. 
+            Widely Used: Java is widely used in enterprise applications, web development (Java EE), mobile app development (Android), and large-scale systems due to its reliability and portability. for<a href="https://www.javatpoint.com/java-basics"> in-detail</a></p>
+        <br>
+        <br>
+        <br>
+        <div><span style="float: left;"><h2>DBMS:</h2></span><span style="float: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd-8Pklk6ke7thnWCa9AJTQiXbXN138XmsFdQsfaWHFy5CNWB3zyZD6y8wX4pD7um4fA&usqp=CAU"></span></div>
+        <p>
+            Database Management System (DBMS) is a software system that facilitates the creation, management, and manipulation of databases. Here's a brief overview in 7 lines:
+Data Organization: DBMS organizes data in a structured manner, typically using tables with rows and columns.
+Data Retrieval: It provides a query language (e.g., SQL - Structured Query Language) to retrieve and manipulate data stored in the database.
+Data Integrity: DBMS enforces data integrity constraints to ensure accuracy and reliability, such as primary keys, foreign keys, and unique constraints.
+Concurrency Control: Manages simultaneous access to the database by multiple users, preventing conflicts and ensuring data consistency.
+Data Security: DBMS includes mechanisms for user authentication and authorization to control access to sensitive data.for<a href="https://raima.com/understanding-database-management-concepts/"> in-detail</a>
+        </p>
+    </div>
+        <script>
+            function startQuiz() {
+            window.location.href="loginpro.html";
+            }
+        </script>
+
+    </body>
+</html>
