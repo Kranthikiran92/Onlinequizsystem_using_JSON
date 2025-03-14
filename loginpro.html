@@ -1,0 +1,105 @@
+<html>
+    <head>
+    <style> body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 100;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+       /*background-image:url('loginpro1.jpg');
+          */
+          background-color: #22092c;
+      }
+    
+      .container {
+        border: 1px white solid;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 50px;
+       color: #fff; 
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-size-adjust: 300px;
+        text-align: left;
+        background-color:transparent;
+      }
+    
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #btt {
+    padding: 10px 20px;
+    background-color:  hsl(211, 100%, 35%);
+    color: #fff;
+    border: 1px #66D3FA solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 2s ease;
+    text-align: right;
+    background-image:url('sign in.png');
+    position:right;
+    padding-right: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+  }
+
+  #btt:hover {
+    background-color: hsl(203, 72%, 50%);
+    background-color:transparent;
+  }
+    </style>
+    </head>
+    <body>
+        <form id="myform">
+         
+         <center> <h1 style="color:#fff;"><span style="color: #FFA33C;">Login</span>|<span style="color: #FFA33C;">Form </span></h1></center>
+            <div class="container">
+              <div > <img src="loginlogo.png" alt=""></div>
+            <label> UserName:</label><br>
+            <input  type="text" id="t1" placeholder="Enter your username"><br>
+            <br>
+            <label>Password:</label><br>
+            <input  type="password" id="t2" placeholder="Enter your Password"> <br>
+            <br>
+           <br> <input style="text-align: right;"  type="button" id="btt"  value="Sign-In" onclick="return myfunction()"><br>
+            <p id="results"></p><br>
+        </div>
+        </form>
+        <script>
+          function  myfunction(){
+                var un=document.getElementById("t1").value;
+                var up=document.getElementById("t2").value;
+                if(un==="kranthi"&& up==="kranthi92")
+                {
+                  window.localStorage.setItem("un","kranthi");
+                    window.location.href='project.html';
+                }
+                else if(un==="harshavardhan" && up==="harsha91")
+                {
+                  window.localStorage.setItem("un","harshavardhan");
+                    window.location.href='project.html';
+                }
+                else if(un==="sowmya" && up==="sowmyaA0")
+                {
+                  window.localStorage.setItem("un","sowmya");
+                    window.location.href='project.html';
+                }
+                else if(un==="mani" && up==="mani84")
+                {
+                  window.localStorage.setItem("un","mani");
+                    window.location.href='project.html';
+                }
+                else{
+                    alert("please enter valid username and password details");
+                }
+                return false;
+            } 
+            </script>
+            </body>
+</html>
